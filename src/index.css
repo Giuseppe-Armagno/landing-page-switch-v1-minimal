@@ -33,6 +33,10 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+    
+    /* Custom brand colors */
+    --brand: 8 100% 56%;
+    --brand-foreground: 0 0% 100%;
 
     --sidebar-background: 0 0% 98%;
 

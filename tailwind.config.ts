@@ -52,6 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Custom brand colors
+				brand: {
+					DEFAULT: '#FF4422', // Vivid orange
+					light: '#FF6644',
+					dark: '#E63D1E',
+					foreground: '#FFFFFF'
+				},
+				bookingRed: '#ea384c', // Red for "Book a Call" button
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
