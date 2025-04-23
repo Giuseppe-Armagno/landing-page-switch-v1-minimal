@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 
@@ -6,7 +5,7 @@ const Header = () => {
   // Mobile menu state
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className="w-full bg-white py-4 px-6 md:px-12 shadow-sm fixed top-0 left-0 z-10">
+    <header className="w-full bg-white py-4 px-6 md:px-12 shadow-sm fixed top-0 left-0 z-50">
       <div className="max-w-[1440px] mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <Logo />
