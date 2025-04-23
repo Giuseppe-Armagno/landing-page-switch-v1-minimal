@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import AnimatedFormContainer from '@/components/AnimatedFormContainer';
@@ -45,7 +44,6 @@ const Index = () => {
     setCurrentStep(1);
   };
   
-  // Title and subtitle for each step
   const getStepContent = () => {
     switch (currentStep) {
       case 1:
@@ -92,7 +90,7 @@ const Index = () => {
     <div className="min-h-screen bg-brand flex flex-col">
       <Header />
       
-      <main className="flex-1 flex items-center justify-center p-4 md:p-8 pt-24">
+      <main className="flex-1 flex items-center justify-center p-4 md:p-8 pt-32">
         <AnimatedFormContainer title={title} subtitle={subtitle} currentStep={currentStep}>
           {currentStep === 1 && (
             <UploadForm 
