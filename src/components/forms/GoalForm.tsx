@@ -59,7 +59,7 @@ const GoalForm: React.FC<GoalFormProps> = ({
         </Label>
         <Select value={service} onValueChange={handleServiceChange}>
           <SelectTrigger id="service" className="w-full">
-            <SelectValue placeholder="Select a service..." />
+            <SelectValue placeholder="Choose your service" />
           </SelectTrigger>
           <SelectContent>
             {serviceOptions.map((option) => (
@@ -91,7 +91,7 @@ const GoalForm: React.FC<GoalFormProps> = ({
         </Label>
         <Select value={output} onValueChange={setOutput}>
           <SelectTrigger id="output" className="w-full">
-            <SelectValue placeholder="Select output type..." />
+            <SelectValue placeholder="Choose your prediction output" />
           </SelectTrigger>
           <SelectContent>
             {outputOptions.map((option) => (
