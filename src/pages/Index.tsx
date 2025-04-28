@@ -7,6 +7,7 @@ import GoalForm from '@/components/forms/GoalForm';
 import ProcessingForm from '@/components/forms/ProcessingForm';
 import SummaryForm from '@/components/forms/SummaryForm';
 import SuccessScreen from '@/components/SuccessScreen';
+import LoginForm from '@/components/forms/LoginForm';
 
 const Index = () => {
   const [currentStep, setCurrentStep] = useState<number>(1);
@@ -63,15 +64,20 @@ const Index = () => {
         };
       case 4:
         return {
+          title: "Sign In",
+          subtitle: "Please sign in to continue with the process."
+        };
+      case 5:
+        return {
           title: "Processing Your Data",
           subtitle: "Please wait while we analyze your dataset."
         };
-      case 5:
+      case 6:
         return {
           title: "Summary",
           subtitle: "Review your data and generate the report."
         };
-      case 6:
+      case 7:
         return {
           title: "Success",
           subtitle: "Your report has been generated successfully."
@@ -121,14 +127,18 @@ const Index = () => {
           )}
           
           {currentStep === 4 && (
-            <ProcessingForm onComplete={handleNextStep} />
+            <LoginForm onNext={handleNextStep} onBack={handlePrevStep} />
           )}
           
           {currentStep === 5 && (
-            <SummaryForm onSubmit={handleSubmit} formData={formData} />
+            <ProcessingForm onComplete={handleNextStep} />
           )}
           
           {currentStep === 6 && (
+            <SummaryForm onSubmit={handleSubmit} formData={formData} />
+          )}
+          
+          {currentStep === 7 && (
             <SuccessScreen onReset={handleReset} />
           )}
         </AnimatedFormContainer>
