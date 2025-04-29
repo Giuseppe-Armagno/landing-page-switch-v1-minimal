@@ -18,10 +18,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onNext, onBack }) => {
   return (
     <Card className="w-full bg-white">
       <CardHeader className="space-y-1 text-center">
-        <CardTitle className="text-2xl font-semibold">SIGN IN TO VIEW YOUR DATA</CardTitle>
-        <CardDescription>
-          Sign in to continue
-        </CardDescription>
+        <CardTitle className="text-2xl font-semibold">Sign in to continue</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <Button

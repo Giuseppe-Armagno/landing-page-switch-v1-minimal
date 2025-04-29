@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Header from '@/components/Header';
 import AnimatedFormContainer from '@/components/AnimatedFormContainer';
@@ -64,7 +65,7 @@ const Index = () => {
         };
       case 4:
         return {
-          title: "Sign In",
+          title: "Sign in to view your data",
           subtitle: "Please sign in to continue with the process."
         };
       case 5:
